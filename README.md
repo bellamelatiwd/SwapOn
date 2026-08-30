@@ -120,10 +120,12 @@ Total **202 endpoint** terdokumentasi di Postman collection, mencakup modul Auth
 - **Idempotency** — `ProcessedWebhookRepository` & `DuplicateTransactionException` mencegah pemrosesan transaksi ganda dari webhook payment gateway
 
 ## Project Status
+```
 🟢 **Near Production Ready** — Backend dan mobile app sudah hampir selesai dan disiapkan untuk deployment AWS serta peluncuran di Google Play Store & App Store.
 🟡 **Pending** — GMO Payment & Wise Payout masih menunggu approval/verifikasi provider. 
-
-*Source code bersifat privat & rahasia karena mengandung kode milik klien yang belum diluncurkan secara publik. Detail teknis dapat didiskusikan lebih lanjut — silakan hubungi saya di bellamelatiwd@gmail.com.*
+```
 
 ## Peran Saya
 Backend Developer — mengembangkan REST API dengan Spring Boot, merancang skema database PostgreSQL, mengimplementasikan business logic wallet & transaksi, integrasi payment gateway (Stripe) dan exchange rate eksternal, serta menyiapkan backend untuk deployment AWS.
+
+*Source code bersifat privat & rahasia karena mengandung kode milik klien yang belum diluncurkan secara publik. Detail teknis dapat didiskusikan lebih lanjut — silakan hubungi saya di bellamelatiwd@gmail.com.*
