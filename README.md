@@ -7,7 +7,7 @@ SwapOn adalah platform fintech untuk transfer uang antara Jepang (JPY) dan Indon
 - **Tiered Fee System** — base fee 110 JPY + tier fee berdasarkan nominal transaksi, plus fee tambahan 1–3% untuk pembayaran kartu kredit
 - **E-Wallet** — sistem saldo (balance) dan reward point terpisah, top up, serta wallet ledger untuk audit trail
 - **Reward Point & Coupon** — klaim poin harian (1x/hari, expired 30 hari) dan sistem kupon dengan validasi masa berlaku & limit penggunaan
-- **Multi Payment Method** — wallet, bank transfer Jepang (Paypal), dan kartu kredit (Mastercard, Visa, JCB) via Stripe
+- **Multi Payment Method** — wallet, bank transfer Jepang (Paypal), kartu debit dan kartu kredit (Mastercard, Visa, JCB) via Stripe
 - **Anti-Money Laundering (AML)** — validasi & kontrol keamanan transaksi finansial
 - **Admin Verification** — dashboard admin untuk verifikasi transaksi, approval top up, dan audit log
 - **Event-driven Notification** — Kafka producer/consumer untuk memproses event transaksi selesai secara asinkron, dilanjutkan push notification
@@ -21,7 +21,7 @@ Java 21 · Spring Boot · PostgreSQL · Docker · REST API
 | Database | PostgreSQL |
 | Message Broker | Apache Kafka (event-driven transaction processing) |
 | Cache | Redis |
-| Payment Gateway | Stripe (card payout), GMO Payment & Wise (pending approval) |
+| Payment Gateway | Stripe (card pay-in), GMO Payment & Wise (card payout) (pending approval) |
 | Auth | JWT, Google OAuth (Firebase) |
 | Containerization | Docker, Docker Compose |
 | API Testing | Postman (202 endpoints) |
@@ -121,8 +121,8 @@ Total **202 endpoint** terdokumentasi di Postman collection, mencakup modul Auth
 
 ## Project Status
 ```
-🟢 **Near Production Ready** — Backend dan mobile app sudah hampir selesai dan disiapkan untuk deployment AWS serta peluncuran di Google Play Store & App Store.
-🟡 **Pending** — GMO Payment & Wise Payout masih menunggu approval/verifikasi provider. 
+🟢 Near Production Ready — Backend dan mobile app sudah hampir selesai dan disiapkan untuk deployment AWS serta peluncuran di Google Play Store & App Store.
+🟡 Pending — GMO (Global Media Online) Payment Gateway & Wise Payout Gateway masih menunggu approval/verifikasi provider. 
 ```
 
 ## Peran Saya
